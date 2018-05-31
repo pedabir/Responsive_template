@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  position: relative;
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  left: 0;
+  transition: .6s; }
+
+.open {
+  left: 200px; }
+
+header {
+  padding: 0 0 0 10%;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  background-color: #373c3f; }
+  @media only screen and (min-width: 768px) {
+    header {
+      height: 65px;
+      line-height: 60px; } }
+  header .logo {
+    float: left; }
+    @media only screen and (min-width: 1025px) {
+      header .logo {
+        display: none; } }
+    @media only screen and (max-width: 1024px) {
+      header .logo {
+        display: block;
+        height: 65px;
+        line-height: 60px; } }
+    header .logo a {
+      font-family: Montserrat;
+      font-size: 19px;
+      font-weight: 400;
+      text-align: left;
+      color: white;
+      text-decoration: none; }
+  header .desktop-menu {
+    background-color: #373c3f;
+    overflow: hidden; }
+    header .desktop-menu ul {
+      margin: 0;
+      padding: 0; }
+      @media only screen and (max-width: 1024px) {
+        header .desktop-menu ul {
+          background: #444;
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: -200px;
+          width: 200px;
+          transition: .6s;
+          z-index: 1; } }
+      header .desktop-menu ul li {
+        float: left;
+        display: block; }
+        @media only screen and (max-width: 1024px) {
+          header .desktop-menu ul li {
+            float: none;
+            padding-top: 30px; } }
+        header .desktop-menu ul li a {
+          padding: 0 20px;
+          display: block;
+          color: white;
+          font-size: 19px;
+          font-weight: 400;
+          text-align: left;
+          text-decoration: none;
+          text-transform: uppercase; }
+        header .desktop-menu ul li a:hover {
+          background: #000; }
+    header .desktop-menu .open {
+      left: 0; }
+
+.hamburger {
+  display: none;
+  width: 16px;
+  height: 12px;
+  float: right;
+  margin: 25px;
+  position: relative;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff; }
+  @media only screen and (max-width: 1024px) {
+    .hamburger {
+      display: block; } }
+
+.hamburger:after {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  left: 0;
+  top: 5px;
+  height: 2px;
+  background: #fff; }
+
+section {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(to top left, #19b4c6, #078aa4); }
+  @media only screen and (min-width: 768px) {
+    section {
+      height: 340px; } }
+  @media only screen and (min-width: 1025px) {
+    section {
+      height: 540px; } }
+  section .title {
+    position: absolute;
+    top: 25%;
+    left: 10%; }
+    section .title h1 {
+      color: white;
+      font-family: sans-serif;
+      font-size: 22px;
+      padding-bottom: 10px; }
+      @media only screen and (min-width: 768px) {
+        section .title h1 {
+          font-size: 36px;
+          padding-bottom: 50px; } }
+      @media only screen and (min-width: 1025px) {
+        section .title h1 {
+          font-size: 50px;
+          font-weight: 400; } }
+    section .title a {
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      display: inline; }
+      @media only screen and (min-width: 768px) {
+        section .title a {
+          font-size: 24px; } }
+      @media only screen and (min-width: 1025px) {
+        section .title a {
+          font-size: 36px; } }
+      section .title a h1 {
+        display: inline;
+        font-size: 14px;
+        font-weight: bold;
+        padding-left: 100px; }
+        @media only screen and (min-width: 768px) {
+          section .title a h1 {
+            font-size: 24px;
+            padding-left: 200px; } }
+        @media only screen and (min-width: 1025px) {
+          section .title a h1 {
+            font-size: 36px;
+            padding-left: 230px; } }
+
+.link-row {
+  width: 100%;
+  height: 75px;
+  display: flex; }
+  @media only screen and (min-width: 1025px) {
+    .link-row {
+      height: 250px; } }
+  .link-row .title {
+    width: 80%;
+    position: relative;
+    height: 100%;
+    background-color: #373c3f;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box; }
+    .link-row .title p {
+      top: 50%;
+      padding-left: 5%;
+      position: absolute;
+      color: #5b5064;
+      line-height: 0;
+      font-weight: bold; }
+      @media only screen and (min-width: 768px) {
+        .link-row .title p {
+          font-size: 26px;
+          padding-left: 15%; } }
+      @media only screen and (min-width: 1025px) {
+        .link-row .title p {
+          font-size: 42px;
+          padding-left: 10%; } }
+  .link-row .link {
+    width: 20%;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    background-color: #bc3183;
+    position: relative; }
+    .link-row .link a {
+      top: 50%;
+      position: absolute;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 0;
+      left: 50%;
+      color: white;
+      text-decoration: none; }
+      @media only screen and (min-width: 1025px) {
+        .link-row .link a {
+          font-size: 42px; } }
+
+.fotos {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 1025px) {
+    .fotos {
+      flex-direction: row; } }
+  .fotos .fotos-item1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    background-color: #5b0fa1; }
+    @media only screen and (min-width: 320px) and (max-width: 479px) {
+      .fotos .fotos-item1 {
+        height: 270px; } }
+    @media only screen and (min-width: 480px) {
+      .fotos .fotos-item1 {
+        height: 100vh; } }
+    @media only screen and (min-width: 1025px) {
+      .fotos .fotos-item1 {
+        height: auto; } }
+    .fotos .fotos-item1 a {
+      position: absolute;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 32px;
+      top: 50%;
+      line-height: 0; }
+      @media only screen and (min-width: 768px) {
+        .fotos .fotos-item1 a {
+          font-size: 36px; } }
+  .fotos .fotos-item {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .fotos .fotos-item {
+        height: auto; } }
+    .fotos .fotos-item img {
+      display: block;
+      width: 100%;
+      height: auto; }
+
+.content {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+  height: auto;
+  background-color: #ebebeb;
+  padding: 15px 30px 0 40px; }
+  @media only screen and (min-width: 768px) {
+    .content {
+      height: 100vh; } }
+  @media only screen and (min-width: 1025px) {
+    .content .content-counteiner {
+      font-family: Montserrat;
+      column-count: 2; }
+      .content .content-counteiner p {
+        padding: 0; } }
+  .content h1 {
+    font-family: Montserrat;
+    color: #088ca5;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 44px;
+    text-align: left; }
+    @media only screen and (min-width: 768px) {
+      .content h1 {
+        font-family: Montserrat;
+        color: #088ca5;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 44px;
+        text-align: left; } }
+    @media only screen and (min-width: 1025px) {
+      .content h1 {
+        font-family: Montserrat;
+        color: #088ca5;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 44px;
+        text-align: left; } }
+  .content p {
+    font-family: Montserrat;
+    padding-bottom: 20px;
+    color: #515051;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left; }
+    @media only screen and (min-width: 768px) {
+      .content p {
+        font-family: Montserrat;
+        color: #515051;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+        text-shadow: 0px 1px 0px #ffffff; } }
+    @media only screen and (min-width: 1025px) {
+      .content p {
+        font-family: Montserrat;
+        color: #515051;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left; } }
