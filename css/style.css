@@ -33,7 +33,7 @@ header {
     @media only screen and (max-width: 1024px) {
       header .logo {
         display: block;
-        height: 65px;
+        height: 60px;
         line-height: 60px; } }
     header .logo a {
       font-family: Montserrat;
