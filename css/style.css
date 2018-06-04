@@ -220,10 +220,13 @@ section {
     position: relative;
     text-align: center;
     background-color: #5b0fa1; }
-    @media only screen and (min-width: 320px) and (max-width: 479px) {
+    @media only screen and (max-width: 767px) {
       .fotos .fotos-item1 {
         height: 270px; } }
     @media only screen and (min-width: 480px) {
+      .fotos .fotos-item1 {
+        height: 460px; } }
+    @media only screen and (min-width: 768px) {
       .fotos .fotos-item1 {
         height: 100vh; } }
     @media only screen and (min-width: 1025px) {
